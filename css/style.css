@@ -2,7 +2,7 @@ body {
     font-family: Poppins 700;
     margin: 0px;
     padding: 0px; 
-    font-size: 19px;
+    font-size: 20px;
     word-spacing: 1px;
     line-height: 1.5;
   }
@@ -84,7 +84,6 @@ body {
   }
   
   .text-with-image .text-content {
-    flex: 1;
     max-width: 70%;
     text-align: left;
   }
@@ -223,6 +222,52 @@ header h1 h2 {
   margin-top: 10px;
 }
 
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+body, p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; 
+}
+
+.contact-text {
+  max-width: 20%; 
+  font-size: 30px;
+}
+
+.contact-image {
+  max-width: 50%; 
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.menu {
+padding-top: 100px;
+padding-right: 300px;
+width: 500px;
+border-radius: 20px;
+}
+
+.about-us{
+  padding-left: 200px;
+}
+
+.home-text{
+  font-size: 30px;
+}
 
 
 
@@ -233,6 +278,12 @@ header h1 h2 {
     background-image: url("../media/images/gulp-pouring-coffee-horizontal-sm.jpg");
     
   }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+  }
 }
 @media screen and (max-width: 900px) {
   .image-quote img {
@@ -240,5 +291,70 @@ header h1 h2 {
     border-radius: 20px;
     background-image: url("../media/images/gulp-pouring-coffee-horizontal.jpg"); 
     
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .text-with-image {
+    flex-direction: column;
+  }
+
+  .text-content {
+    max-width: 100%;
+    margin: 20px;
+    text-align: justify;
+  }
+
+  .text-with-image img {
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .text-with-image {
+    flex-direction: column;
+  }
+
+  .text-content {
+    max-width: 100%;
+    margin: 20px;
+    text-align: justify;
+  }
+
+  .text-with-image img {
+    max-width: 100%;
+    margin: 0 auto 20px;
   }
 }

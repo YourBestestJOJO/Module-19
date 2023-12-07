@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Gulp Roast About us</title>
 </head>
 <body>
     <header>
-        <img src="media/images/gulp-logo-light.png" alt="Gulp Roast Coffee Logo" width="150px">
+        <a href="home.html">
+            <img src="media/images/gulp-logo-light.png" alt="Gulp Roast Coffee Logo" width="150px">
+            </a>
         <nav>
             <ul>
-                <li><a href="index.html" class="store-link"><i class="fas fa-mug-hot store-icon"></i>About Us</a></li>
+                <li><a href="index.html" class="store-link"><i class="fas fa-mug-hot store-icon"></i>About</a></li>
                 <li><a href="products.html"><i class="fas fa-map-marker-alt location-icon"></i>Products</a></li>
                 <li><a href="contactus.html"><i class="fas fa-thin fa-phone phone-icon"></i>Contact</a></li>
             </ul>
@@ -28,9 +31,9 @@
             </div>
         </div>
         <picture>
-            <source srcset="media/images/gulp-pouring-coffee-horizontal-sm.jpg" media="(max-width: 400px)">
-            <source srcset="media/images/gulp-pouring-coffee-vertical.jpg" media="(max-width 700px)">
-            <img src="media/images/gulp-pouring-coffee-horizontal.jpg" alt="Coffee Image">
+            <source media="(min-width:900px)" srcset="media/images/gulp-pouring-coffee-horizontal.jpg">
+            <source media="(min-width:650px)" srcset="media/images/gulp-pouring-coffee-vertical.jpg">
+            <img src="media/images/gulp-pouring-coffee-horizontal-sm.jpg" alt="Flowers" style="width:auto;">
           </picture>
     </div>
 
